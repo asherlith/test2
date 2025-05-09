@@ -6,7 +6,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        KeyboardButton(text=" فیلم ببینیم!️", web_app=WebAppInfo(url="https://dooorbin.com/"))
+        [KeyboardButton(text=" فیلم ببینیم!️", web_app=WebAppInfo(url="https://dooorbin.com/"))]
     ]
     await update.message.reply_text(
         "روی یکی از دکمه‌های زیر بزن:",
